@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+	
+	background: #000;
+}
+.box {
+    
+    display: grid;
+    place-items:center;
+    height: 100vh;
+	font-family: cursive;
+	text-align: center;
+}
+.box p {
+    font-size: 50px;
+    text-transform: uppercase;
+	color: #ffd9e2;
+	text-shadow: 0 0 0 transparent,
+                0 0 10px orangered,
+                0 0 20px rgba(255, 0, 60, 0.5),
+                0 0 40px orangered,
+                0 0 100px orangered,
+                0 0 200px orangered,
+                0 0 300px orangered,
+                0 0 500px orangered,
+                0 0 1000px orangered;
+	animation: animate 3s infinite alternate;
+}
+@keyframes animate {
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 0.8;
+	}
+	43% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 0.3;
+	}
+	46% {
+		opacity: 1;
+	}
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Flicker Text</p>
+    </div>
+</body>
+</html>
